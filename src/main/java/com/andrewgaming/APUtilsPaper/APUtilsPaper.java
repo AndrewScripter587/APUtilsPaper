@@ -1,10 +1,11 @@
 package com.andrewgaming.APUtilsPaper;
 
 import io.papermc.paper.plugin.lifecycle.event.types.LifecycleEvents;
+import org.bukkit.Server;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class APUtilsPaper extends JavaPlugin {
-
+    static Server GAME_SERVER;
     @Override
     public void onEnable() {
         // Plugin startup logic
@@ -12,6 +13,7 @@ public final class APUtilsPaper extends JavaPlugin {
                 commands -> commands.registrar().register(SetupCommands.registerCommands()
         ));
 
+        GAME_SERVER = this.getServer();
     }
 
     @Override
