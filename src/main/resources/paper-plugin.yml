@@ -1,0 +1,9 @@
+name: APUtilsPaper
+version: '1.0-SNAPSHOT'
+main: com.andrewgaming.APUtilsPaper.APUtilsPaper
+api-version: '1.21'
+load: STARTUP
+authors: [ AndrewGaming587 ]
+description: A WIP port of aputils to paper
+
+
