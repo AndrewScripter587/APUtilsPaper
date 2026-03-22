@@ -4,7 +4,7 @@ plugins {
 }
 
 group = 'com.andrewgaming'
-version = '1.0-SNAPSHOT'
+version = "${version}"
 
 repositories {
     mavenCentral()
